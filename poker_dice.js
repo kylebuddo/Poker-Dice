@@ -1,4 +1,4 @@
-document.exitFullscreen();
+
 
 ////// get everything
 const roll1Btn = document.querySelector('.roll1');
