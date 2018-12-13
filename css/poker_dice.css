@@ -1,0 +1,77 @@
+*, body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+  * .container, body .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #b1b1b1; }
+    * .container .grid, body .container .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto auto auto 1fr;
+      grid-row-gap: 20px;
+      grid-template-areas: "d1 . d2" ". d3 ." "d4 . d5" "btnbx btnbx btnbx";
+      grid-gap: 0.5em;
+      min-width: 100vw;
+      min-height: 100vh;
+      padding: 1.5em;
+      position: relative; }
+      * .container .grid .dice, body .container .grid .dice {
+        position: relative;
+        background-color: #b1b1b1; }
+        * .container .grid .dice img, body .container .grid .dice img {
+          width: 100%;
+          height: auto;
+          border-radius: 8px; }
+        * .container .grid .dice .img-hold, body .container .grid .dice .img-hold {
+          border-radius: 8px;
+          border: solid 5px #e91e63; }
+        * .container .grid .dice .hold-cover, body .container .grid .dice .hold-cover {
+          position: absolute;
+          top: 0;
+          z-index: 999;
+          width: 100%;
+          height: 100%;
+          opacity: 1;
+          border-radius: 8px; }
+      * .container .grid .dice:nth-child(1), body .container .grid .dice:nth-child(1) {
+        grid-area: d1; }
+      * .container .grid .dice:nth-child(2), body .container .grid .dice:nth-child(2) {
+        grid-area: d2; }
+      * .container .grid .dice:nth-child(3), body .container .grid .dice:nth-child(3) {
+        grid-area: d3; }
+      * .container .grid .dice:nth-child(4), body .container .grid .dice:nth-child(4) {
+        grid-area: d4; }
+      * .container .grid .dice:nth-child(5), body .container .grid .dice:nth-child(5) {
+        grid-area: d5; }
+      * .container .grid .button-box, body .container .grid .button-box {
+        grid-area: btnbx; }
+      * .container .grid .button-box, body .container .grid .button-box {
+        display: flex;
+        justify-content: center; }
+        * .container .grid .button-box button, body .container .grid .button-box button {
+          padding: 0.7rem 1.5rem;
+          font-size: 1rem;
+          border-radius: 12px;
+          border: solid 2px white;
+          position: absolute;
+          margin-top: 10px;
+          outline: none;
+          color: white;
+          background-color: rgba(255, 255, 255, 0.3);
+          text-transform: uppercase;
+          font-weight: 900; }
+          * .container .grid .button-box button:active, body .container .grid .button-box button:active {
+            border: solid 2px #5d7077;
+            color: #5d7077;
+            background-color: rgba(93, 112, 119, 0.3); }
+        * .container .grid .button-box .reset, * .container .grid .button-box .newgame, body .container .grid .button-box .reset, body .container .grid .button-box .newgame {
+          transform: translateY(130%); }
+        * .container .grid .button-box .newgame, body .container .grid .button-box .newgame {
+          border: solid 2px #e91e63;
+          color: #e91e63;
+          background-color: white; }
+
+/*# sourceMappingURL=poker_dice.css.map */

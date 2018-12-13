@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Poker Dice</title>
+	<link rel="stylesheet" href="css/poker_dice.css">
+</head>
+<body>
+	<div class="container">
+		<div class="grid">
+			<div class="dice dice1" data-num="dice1"><img class='card--image' src='imgs/back0.jpg'></div>
+			<div class="dice dice2" data-num="dice2"><img class='card--image' src='imgs/back0.jpg'></div>
+			<div class="dice dice3" data-num="dice3"><img class='card--image' src='imgs/back0.jpg'></div>
+			<div class="dice dice4" data-num="dice4"><img class='card--image' src='imgs/back0.jpg'></div>
+			<div class="dice dice5" data-num="dice5"><img class='card--image' src='imgs/back0.jpg'></div>
+			<div class="button-box">
+				<button class='roll1' onclick="firstRoll()">Roll 1</button>
+				<button class='roll2' onclick="secondRoll()" disabled>Roll 2</button>
+				<button class='roll3' onclick="finalRoll()" disabled>Final Roll!</button>
+				<button class='reset' onclick="reset()" disabled>New Game!</button>
+				<button class='newgame' onclick="reset()" disabled>New Game!</button>
+			</div>
+		</div>
+	</div>
+</body>
+<script src='poker_dice.js'></script>
+</html>
