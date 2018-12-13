@@ -15,8 +15,8 @@
       grid-template-areas: "d1 . d2" ". d3 ." "d4 . d5" "btnbx btnbx btnbx";
       grid-gap: 0.5em;
       min-width: 100vw;
-      height: 90vh;
-      padding: 1.5em;
+      height: 100vh;
+      padding: 1em;
       position: relative; }
       * .container .grid .dice, body .container .grid .dice {
         position: relative;
