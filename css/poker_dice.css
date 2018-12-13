@@ -22,8 +22,8 @@
         position: relative;
         background-color: #b1b1b1; }
         * .container .grid .dice img, body .container .grid .dice img {
-          width: 100%;
-          height: auto;
+          width: auto;
+          height: 40px;
           border-radius: 8px; }
         * .container .grid .dice .img-hold, body .container .grid .dice .img-hold {
           border-radius: 8px;
