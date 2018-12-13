@@ -97,7 +97,7 @@ function reset(){
 	newBtn.disabled = true;
 
 	originalDice.forEach(dice => {
-		dice.innerHTML = `<img class='card--image' src='imgs/back0.jpg'>`;
+		dice.innerHTML = `<img class='card--image' src='imgs/back.jpg'>`;
 		if(dice.classList.contains('hold')) {
 			dice.classList.remove('hold');
 		} else {
